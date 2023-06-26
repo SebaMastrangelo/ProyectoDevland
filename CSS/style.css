@@ -1,0 +1,661 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@200;300;400;600;700&family=Playfair+Display:wght@400;500;600;700;900&family=Roboto+Condensed:wght@300;400;700&family=Teko:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@200;300;400;600;700&family=Lobster&family=Oswald:wght@300;500;700&family=Playfair+Display:wght@400;500;600;700;900&family=Roboto+Condensed:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&family=Josefin+Slab:wght@200;300;400;600;700&family=Lobster&family=Oswald:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@200;300;400;600;700&family=Lobster&family=Oswald:wght@300;500;700&family=Tajawal:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Slab:wght@200;300;400;600;700&family=Lobster&family=Oswald:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Slab:wght@200;300;400;600;700&family=Lobster&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Slab:wght@200;300;400;600;700&family=Lobster&family=Mulish:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poltawski+Nowy:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair&family=Poltawski+Nowy:ital,wght@1,500&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+}
+
+.aLogoLion{
+    width: 90px;
+    height: 90px;
+}
+
+.LogoLion{
+    width: 90px;
+}
+
+#containerLetterHeater{
+    margin: 0 0 0 20px;
+}
+
+#animatedLetter{
+    color: black;
+}
+
+.animated-word{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.letter{
+    transform: 0.4s;
+    transform: translateX(0);
+    cursor: grab;
+    color: #fff;
+    font-size: 40px;
+    transition: 0.3s;
+    font-family: 'Lobster', cursive;
+    margin: 10px 0 0 0;
+}
+
+.letter:hover{
+    transform: translateY(-1rem);
+    background: -webkit-linear-gradient(120deg, hsl(19, 90%, 52%), hsl(56, 100%, 50%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.textDevland{
+    text-align: center;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    margin: 20px 20px 20px 20px;
+}
+
+#liActive{
+    color: white;
+}
+
+#liActive::after{
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: -10px;
+    left: 0;
+    background-color: brown;
+    transform-origin: bottom;
+    transform: scaleX(1);
+    transform-origin: bottom;
+}
+
+.linkLista{
+    text-decoration: none;
+    margin: 0 150px 0 150px;  
+}
+
+.list{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+
+.linkLista{
+    position: relative;
+    font-family: 'Teko', sans-serif;
+    font-size: 20px;
+    color: black;
+}
+
+.linkLista:hover{
+    color: white;
+    transition: .3s;
+}
+
+.linkLista::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: -10px;
+    left: 0;
+    background-color: brown;
+    transform-origin: bottom;
+    transition: 0.3s;
+}
+
+.linkLista:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom;
+}
+
+.containerContent{
+    text-align: center;
+    background-image: linear-gradient(rgba(5,7,12,0.75), rgba(20, 26, 41, 0.75)), url('/IMG/imgInicio/globoAereoimg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 200px;
+    color: white;
+}
+
+.tittleProduct{
+    margin: 0 0 20px 0;
+    font-family: 'Josefin Slab', serif;
+}
+
+.textProduct{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.textProduct strong{
+    font-family: 'Lobster', cursive;
+    color: brown;
+}
+
+.textProduct2{
+    margin: 20px 0 0 0;
+    font-family: 'Mulish', sans-serif;
+}
+
+
+
+/* Productos */
+
+.tituloH2Productos{
+    margin: 40px 0 10px 0;
+    font-family: 'Poltawski Nowy', serif;
+    font-weight: bold;
+    color: #0d2033;
+    padding: 30px;
+}
+
+.mainProductos{
+    text-align: center;
+    color: #0d2033;
+}
+
+.productosUl{
+    display: flex;
+    grid: 50px;
+    grid-gap: 50px;
+    padding: 50px;
+}
+
+.mLi{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    border: 2px groove white;
+    border-radius: 70px;
+}
+
+.mBlackPack{
+    width: 150px;
+    height: 200px;
+}
+
+.mBlueLaptop{
+    width: 200px;
+    height: 200px;
+}
+
+.mXataka{
+    width: 150px;
+    height: 200px;
+}
+
+.mPortatil{
+    width: 150px;
+    height: 200px;    
+}
+
+.h2Productos{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Josefin Slab', serif;
+}
+
+.p1Productos{
+    font-size: 18px;
+    margin-top: 10px;
+    font-family: 'Josefin Slab', serif;
+    color: rgb(41, 41, 41);
+}
+
+.p2Productos{
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: 'Josefin Slab', serif;
+    color: rgb(41, 41, 41);
+}
+
+/* Agregando 1x1 el Hover */
+
+.mLi:hover{
+    border-color: brown;
+    transition: 0.3s;
+}
+
+.h2Productos:hover{
+    font-size: 33px;
+}
+
+.sectionDivRef{
+    padding: 20px;
+    background-color: antiquewhite;
+}
+
+.containerRef{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 0px 20px 0 20px;
+}
+
+.tittleRef{
+    font-family: 'Oswald', sans-serif;
+}
+
+.textRef{
+    font-family: 'Josefin Slab', serif;
+}
+
+.mainProductos2{
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.tittleProductos2{
+    margin: 40px 0 10px 0;
+    color: #0d2033;
+    font-family: 'Poltawski Nowy', serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.divProductos{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    grid: 50px;
+    grid-gap: 50px;
+}
+
+.divBolso{
+    display: inline-block;
+    width: 30%;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    border: 2px groove white;
+    border-radius: 70px;
+}
+
+.divBolso img{
+    width: 150px;
+    height: 200px;
+    margin: 20px 0 20px 0;
+}
+
+.h2Bolso{
+    font-size: 30px;
+    font-family: 'Josefin Slab', serif;
+    color: #0d2033;
+}
+
+.p1Bolso{
+    font-size: 18px;
+    margin-top: 10px;
+    font-family: 'Josefin Slab', serif;
+    color: rgb(41, 41, 41);
+}
+
+.p2Bolso{
+    font-size: 18px;
+    margin-top: 10px;
+    font-family: 'Josefin Slab', serif;
+    color: rgb(41, 41, 41);
+}
+
+.divBolso:hover{
+    cursor: pointer;
+    padding: 30px;
+    transition: 0.2s;
+}
+
+.mainProductos3{
+    text-align: center;
+}
+
+.tittleProductos3{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Poltawski Nowy', serif;
+    color: #0d2033;
+}
+
+.h2Product3{
+    font-size: 30px;
+    font-family: 'Josefin Slab', serif;
+    color: #0d2033;
+}
+
+.divProductos3{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.divMaletas{
+    grid: 20px;
+    grid-gap: 20px;
+    border: 2px groove white;
+    border-radius: 40px;
+    padding: 20px;
+}
+
+.imgMaletas{
+    width: 150px;
+    height: 250px;
+    margin: 20px;
+}
+
+.divMaletas:hover{
+    padding: 40px;
+    transition: 0.2s;
+}
+
+.p1Maleta{
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: 'Josefin Slab', serif;
+    color: rgb(41, 41, 41);
+}
+
+.p2Maleta{
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: 'Josefin Slab', serif;
+    color: rgb(41, 41, 41);
+}
+
+.botonProductos{
+    margin-top: 10px;
+    color: #0d2033;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CARD */
+
+.containerCard{
+    display: flex;
+    grid: 10px;
+    grid-gap: 30px;
+    margin: 30px 0 30px 0;
+    padding: 30px;
+    background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
+    background-blend-mode: screen;
+}
+
+.card{
+    border-radius: 20px;
+    height: 200px;
+    flex: 1;
+    transition: .3s all ease;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+.card:hover{
+    flex: 2;
+}
+
+#card1{
+    background-image: url('/IMG/mochilas/mochilaCard.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#card2{
+    background-image: url('/IMG/mochilas/mochilaCard2.jpg');
+    background-size: cover;
+}
+
+#card3{
+    background-image: url('/IMG/mochilas/mochilacard3.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+#card4{
+    background-image: url('/IMG/mochilas/mochilaCard4.avif');
+    background-size: cover;
+    background-position: center center;
+}
+
+#card5{
+    background-image: url('/IMG/mochilas/mochilaCard5.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+
+footer{
+    width: 100%;
+    padding: 50px 0;
+    background-color: #131313;
+}
+
+.tituloFooter{
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 0 0 10px 0;
+}
+
+.textFooter{
+    color: white;
+    font-family: sans-serif;
+}
+
+.letterFooter{
+    transform: 0.4s;
+    transform: translateX(0);
+    cursor: grab;
+    color: white;
+    font-size: 26px;
+    transition: 0.3s;
+    font-family: 'Lobster', cursive;
+    margin: 10px 0 0 0;
+}
+
+.letterFooter:hover{
+    transform: translateY(-1rem);
+    background: -webkit-linear-gradient(120deg, hsl(19, 90%, 52%), hsl(56, 100%, 50%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.logoFooterLion{
+    width: 120px;
+    margin: 0 0 0 112px;
+}
+
+.container__footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.box__footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.termins{
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #7a7a7a;
+}
+
+.conth2Footer{
+    margin-bottom: 30px;
+    color: white;
+    font-weight: 700;
+}
+
+.box__footer a{
+    margin-top: 10px;
+    color: #adadad;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.box__footer a:hover{
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.box__footer a i{
+    font-size: 18px;
+}
+
+.box__copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    color: white;
+    padding: 40px 0;
+}
+
+.box__copyright p{
+    margin-top: 20px;
+    color: #7a7a7a;
+}
+
+.box__copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+}
+
+.containercopy{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.textCopyright{
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    animation-name: movCopyright;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes movCopyright {
+    0% {
+        left: 0; top: 0;
+    }
+
+    25% {
+        left: 300px; top: 0;
+    }
+
+    50% {
+        left: -300px; top: 0;
+    }
+
+    75% {
+        left: 300; top: 0;
+    }
+
+    100% {
+        left: 0; top: 0;
+    }
+}
+
+.aRedes i{
+    margin: 0 5px 0 0;
+}
+
+.box__footer i{
+    margin: 0 0 0 5px;
+    color: white;
+}
+
+.fontLetra b{
+    font-size: 18px;
+}
+
+.tittleAtenciontel b{
+    font-size: 20px;
+}   
+
+.seccionCompraSegura{
+    text-align: left;
+    width: 340px;
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+}
+
+.div2{
+    max-width: 500px;
+    
+}
+
+.compraSegura b{
+    font-size: 18px;
+}
+
+.textCompraSegura{
+    padding: 0 0 20px 0;
+}
+
+.textSeccion{
+    margin: 0;
+}
+
